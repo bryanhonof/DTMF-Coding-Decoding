@@ -59,7 +59,10 @@ main(void)
 		UART_write("Start of application\r\n");
 		
 		for (;;) {
-				/* Do nothing. */
+				delay_ms(5000u);
+				i2s_stop();
+				delay_ms(5000u);
+				i2s_start();
 		}
 		
 		/* Should not reach this. */
