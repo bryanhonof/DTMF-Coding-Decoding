@@ -1,0 +1,130 @@
+Dependencies for Project 'encoder', Target 'S6ECC': (DO NOT MODIFY !)
+F (.\src\main.c)(0x5CE50A26)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\drivers -I ..\common\RTE\Device\S6E2CCAJ0A-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_S6ECC-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\common\drivers\audio.h)(0x55CD97F4)
+I (..\common\RTE\Device\S6E2CCAJ0A\s6e2cc.h)(0x55C9C8FA)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\mcu.h)(0x570C9A4C)
+I (..\common\RTE\Device\S6E2CCAJ0A\system_s6e2cc.h)(0x5460783E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\interrupt_type.h)(0x570C9A4C)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B9768A4)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FA234)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F218C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599F218E)
+I (..\common\drivers\delay.h)(0x5437FF56)
+I (..\common\drivers\gpio.h)(0x55952C6C)
+I (..\common\drivers\platform.h)(0x55CDE98C)
+I (..\common\drivers\i2c.h)(0x55C4D126)
+I (..\common\drivers\i2s.h)(0x55CCB1A6)
+I (..\common\drivers\dstc.h)(0x55D4A4DE)
+F (..\common\drivers\audio.c)(0x55CD977A)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\drivers -I ..\common\RTE\Device\S6E2CCAJ0A-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_S6ECC-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\audio.o --omf_browse .\objects\audio.crf --depend .\objects\audio.d)
+I (..\common\RTE\Device\S6E2CCAJ0A\s6e2cc.h)(0x55C9C8FA)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\mcu.h)(0x570C9A4C)
+I (..\common\RTE\Device\S6E2CCAJ0A\system_s6e2cc.h)(0x5460783E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\interrupt_type.h)(0x570C9A4C)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B9768A4)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (..\common\drivers\gpio.h)(0x55952C6C)
+I (..\common\drivers\platform.h)(0x55CDE98C)
+I (..\common\drivers\delay.h)(0x5437FF56)
+I (..\common\drivers\i2c.h)(0x55C4D126)
+I (..\common\drivers\i2s.h)(0x55CCB1A6)
+I (..\common\drivers\audio.h)(0x55CD97F4)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FA234)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F218C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599F218E)
+I (..\common\drivers\dstc.h)(0x55D4A4DE)
+F (..\common\drivers\delay.c)(0x55B0F626)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\drivers -I ..\common\RTE\Device\S6E2CCAJ0A-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_S6ECC-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (..\common\drivers\platform.h)(0x55CDE98C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (..\common\drivers\delay.h)(0x5437FF56)
+F (..\common\drivers\dstc.c)(0x55CDE874)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\drivers -I ..\common\RTE\Device\S6E2CCAJ0A-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_S6ECC-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\dstc.o --omf_browse .\objects\dstc.crf --depend .\objects\dstc.d)
+I (..\common\RTE\Device\S6E2CCAJ0A\s6e2cc.h)(0x55C9C8FA)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\mcu.h)(0x570C9A4C)
+I (..\common\RTE\Device\S6E2CCAJ0A\system_s6e2cc.h)(0x5460783E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\interrupt_type.h)(0x570C9A4C)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B9768A4)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (..\common\drivers\platform.h)(0x55CDE98C)
+I (..\common\drivers\dstc.h)(0x55D4A4DE)
+I (..\common\drivers\audio.h)(0x55CD97F4)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FA234)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F218C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599F218E)
+I (..\common\drivers\delay.h)(0x5437FF56)
+I (..\common\drivers\gpio.h)(0x55952C6C)
+I (..\common\drivers\i2c.h)(0x55C4D126)
+I (..\common\drivers\i2s.h)(0x55CCB1A6)
+F (..\common\drivers\gpio.c)(0x55CD9824)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\drivers -I ..\common\RTE\Device\S6E2CCAJ0A-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_S6ECC-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (..\common\RTE\Device\S6E2CCAJ0A\s6e2cc.h)(0x55C9C8FA)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\mcu.h)(0x570C9A4C)
+I (..\common\RTE\Device\S6E2CCAJ0A\system_s6e2cc.h)(0x5460783E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\interrupt_type.h)(0x570C9A4C)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B9768A4)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (..\common\drivers\platform.h)(0x55CDE98C)
+I (..\common\drivers\gpio.h)(0x55952C6C)
+F (..\common\drivers\i2c.c)(0x55CD9850)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\drivers -I ..\common\RTE\Device\S6E2CCAJ0A-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_S6ECC-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+I (..\common\RTE\Device\S6E2CCAJ0A\s6e2cc.h)(0x55C9C8FA)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\mcu.h)(0x570C9A4C)
+I (..\common\RTE\Device\S6E2CCAJ0A\system_s6e2cc.h)(0x5460783E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\interrupt_type.h)(0x570C9A4C)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B9768A4)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (..\common\drivers\platform.h)(0x55CDE98C)
+I (..\common\drivers\i2c.h)(0x55C4D126)
+I (..\common\drivers\delay.h)(0x5437FF56)
+F (..\common\drivers\i2s.c)(0x55CDEA6A)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\drivers -I ..\common\RTE\Device\S6E2CCAJ0A-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_S6ECC-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\i2s.o --omf_browse .\objects\i2s.crf --depend .\objects\i2s.d)
+I (..\common\RTE\Device\S6E2CCAJ0A\s6e2cc.h)(0x55C9C8FA)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\mcu.h)(0x570C9A4C)
+I (..\common\RTE\Device\S6E2CCAJ0A\system_s6e2cc.h)(0x5460783E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\interrupt_type.h)(0x570C9A4C)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B9768A4)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (..\common\drivers\platform.h)(0x55CDE98C)
+I (..\common\drivers\i2s.h)(0x55CCB1A6)
+I (..\common\drivers\audio.h)(0x55CD97F4)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FA234)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F218C)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599F218E)
+I (..\common\drivers\delay.h)(0x5437FF56)
+I (..\common\drivers\gpio.h)(0x55952C6C)
+I (..\common\drivers\i2c.h)(0x55C4D126)
+I (..\common\drivers\dstc.h)(0x55D4A4DE)
+F (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Lib\ARM\arm_cortexM4lf_math.lib)(0x5C8BB458)()
+F (RTE\Device\S6E2CCAJ0A\startup_s6e2cc.s)(0x5460783E)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_S6ECC-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "S6E2CCAJ0A SETA 1"--list .\listings\startup_s6e2cc.lst --xref -o .\objects\startup_s6e2cc.o --depend .\objects\startup_s6e2cc.d)
+F (RTE\Device\S6E2CCAJ0A\system_s6e2cc.c)(0x570C9A4C)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\drivers -I ..\common\RTE\Device\S6E2CCAJ0A-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_S6ECC-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\system_s6e2cc.o --omf_browse .\objects\system_s6e2cc.crf --depend .\objects\system_s6e2cc.d)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\mcu.h)(0x570C9A4C)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\s6e2cc.h)(0x570C9A4C)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\core_cm4.h)(0x5C8FA234)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_version.h)(0x5B9768A4)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_compiler.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (..\common\RTE\Device\S6E2CCAJ0A\system_s6e2cc.h)(0x5460783E)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\interrupt_type.h)(0x570C9A4C)
+F (RTE\Device\S6E2CCAJ0A\system_s6e2cc.h)(0x570C9A4C)()
