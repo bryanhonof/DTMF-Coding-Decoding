@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\common\drivers;..\common\RTE\Device\S6E2CCAJ0A;.\inc</IncludePath>
+              <IncludePath>..\common\RTE\Device\S6E2CCAJ0A;..\common\PDL\2.1.0\drivers;..\common\PDL\2.1.0\utilities;..\common\drivers;.\config;.\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -387,10 +387,22 @@
               <FileType>1</FileType>
               <FilePath>.\src\main.c</FilePath>
             </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\uart.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>inc</GroupName>
+          <Files>
+            <File>
+              <FileName>uart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\inc\uart.h</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>drivers</GroupName>
@@ -424,6 +436,34 @@
               <FileName>i2s.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\common\drivers\i2s.c</FilePath>
+            </File>
+            <File>
+              <FileName>mfs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\common\drivers\mfs.c</FilePath>
+            </File>
+            <File>
+              <FileName>mfs_hl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\common\drivers\mfs_hl.c</FilePath>
+            </File>
+            <File>
+              <FileName>pdl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\common\drivers\pdl.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>utilities</GroupName>
+        </Group>
+        <Group>
+          <GroupName>config</GroupName>
+          <Files>
+            <File>
+              <FileName>pdl_user.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\config\pdl_user.h</FilePath>
             </File>
           </Files>
         </Group>

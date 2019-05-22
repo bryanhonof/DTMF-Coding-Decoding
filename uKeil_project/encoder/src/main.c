@@ -1,6 +1,12 @@
 #include <stdlib.h>
 #include <stdint.h>
+
+#include <mcu.h>
 #include <audio.h>
+#include <mfs_hl.h>
+#include <s6e2cc.h>
+#include <pdl_header.h>
+#include <uart.h>
 
 #define SAMPLING_FREQ  (8000u)
 #define N_THETA_ARRAY  (2u)
@@ -45,7 +51,12 @@ I2S_HANDLER(void)
 int32_t
 main(void)
 {
-		audio_init ( hz8000, line_in, intr, I2S_HANDLER);
+		stc_mfs_hl_uart_config_t stcMfsHlUartCfg;
+	
+		UART_init(&stcMfsHlUartCfg);
+		audio_init(hz8000, line_in, intr, I2S_HANDLER);
+	
+		UART_write("Start of application\r\n");
 		
 		for (;;) {
 				/* Do nothing. */
