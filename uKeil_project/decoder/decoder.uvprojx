@@ -7,9 +7,10 @@
 
   <Targets>
     <Target>
-      <TargetName>Target 1</TargetName>
+      <TargetName>S6ECC</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -191,7 +192,7 @@
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
-            <RoSelD>4</RoSelD>
+            <RoSelD>3</RoSelD>
             <RwSelD>4</RwSelD>
             <CodeSel>0</CodeSel>
             <OptFeed>0</OptFeed>
@@ -379,7 +380,49 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group 1</GroupName>
+          <GroupName>src</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>drivers</GroupName>
+          <Files>
+            <File>
+              <FileName>audio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\audio.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>dstc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\dstc.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2s.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\i2s.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
@@ -397,19 +440,19 @@
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.2.0" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.5.1"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="S6ECC"/>
         </targetInfos>
       </component>
       <component Cclass="CMSIS" Cgroup="DSP" Cvariant="Library" Cvendor="ARM" Cversion="1.6.0" condition="CMSIS DSP">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.5.1"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="S6ECC"/>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="S6E2CC CMSIS">
         <package name="FM4_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.1"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="S6ECC"/>
         </targetInfos>
       </component>
     </components>
@@ -419,7 +462,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="S6E2CC CMSIS"/>
         <package name="FM4_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.1"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="S6ECC"/>
         </targetInfos>
       </file>
       <file attr="config" category="source" name="Device\S6E2CC\Source\system_s6e2cc.c" version="1.0.0">
@@ -427,7 +470,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="S6E2CC CMSIS"/>
         <package name="FM4_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.1"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="S6ECC"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="Device\S6E2CC\Source\system_s6e2cc.h" version="1.0.0">
@@ -435,7 +478,7 @@
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="S6E2CC CMSIS"/>
         <package name="FM4_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.1"/>
         <targetInfos>
-          <targetInfo name="Target 1"/>
+          <targetInfo name="S6ECC"/>
         </targetInfos>
       </file>
     </files>

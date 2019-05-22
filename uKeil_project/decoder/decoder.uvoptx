@@ -22,7 +22,7 @@
   </DaveTm>
 
   <Target>
-    <TargetName>Target 1</TargetName>
+    <TargetName>S6ECC</TargetName>
     <ToolsetNumber>0x4</ToolsetNumber>
     <ToolsetName>ARM-ADS</ToolsetName>
     <TargetOption>
@@ -175,11 +175,103 @@
   </Target>
 
   <Group>
-    <GroupName>Source Group 1</GroupName>
+    <GroupName>src</GroupName>
+    <tvExp>1</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>1</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\main.c</PathWithFileName>
+      <FilenameWithoutPath>main.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>drivers</GroupName>
     <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>2</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\audio.c</PathWithFileName>
+      <FilenameWithoutPath>audio.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>3</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\delay.c</PathWithFileName>
+      <FilenameWithoutPath>delay.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>4</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\dstc.c</PathWithFileName>
+      <FilenameWithoutPath>dstc.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>5</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\gpio.c</PathWithFileName>
+      <FilenameWithoutPath>gpio.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>6</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\i2c.c</PathWithFileName>
+      <FilenameWithoutPath>i2c.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>7</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\..\..\..\..\Desktop\SA\toepassingen\oplossingen\AUDIO_1\drivers\i2s.c</PathWithFileName>
+      <FilenameWithoutPath>i2s.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
   </Group>
 
   <Group>
