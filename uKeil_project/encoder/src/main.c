@@ -1,12 +1,12 @@
-// sine_intr.c 
-
-#include "audio.h"
+#include <stdlib.h>
+#include <stdint.h>
+#include <audio.h>
 
 #define SAMPLING_FREQ  (8000u)
 #define N_THETA_ARRAY  (2u)
 
 float32_t frequency_table[2] = { 697.0f, 1209.0f };
-float32_t amplitude          = 5000.0;
+float32_t amplitude          = 5000.0f;
 
 /****** I2S Interruption Handler *****/
 void
@@ -42,7 +42,7 @@ I2S_HANDLER(void)
 		return;
 }
 
-int
+int32_t
 main(void)
 {
 		audio_init ( hz8000, line_in, intr, I2S_HANDLER);
