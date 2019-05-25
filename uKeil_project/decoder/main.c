@@ -43,12 +43,14 @@ int main (void)  {               /* execution starts here                     */
    /* ----------------------------------------------------------------------
    ** Process with a floating-point Biquad filter
    ** ------------------------------------------------------------------- */
+	 for(;;){
+   //arm_biquad_cascade_df2T_init_f32(&DTMF_BIQUAD, 1, biquad_coeffs_f32, biquad_state_f32);
+					 arm_biquad_cascade_df2T_f32(&DTMF_BIQUAD, inSignalF32 + samp, 
+																				outSignalF32 + samp, BLOCKSIZE);
+						for(samp = 0; samp < L; samp += BLOCKSIZE) {
 
-   arm_biquad_cascade_df2T_init_f32(&DTMF_BIQUAD, 1, biquad_coeffs_f32, biquad_state_f32);
-
-   for(samp = 0; samp < L; samp += BLOCKSIZE) {
-
-      arm_biquad_cascade_df2T_f32(&DTMF_BIQUAD, inSignalF32 + samp, 
-                                  outSignalF32 + samp, BLOCKSIZE);
-   }
+						arm_biquad_cascade_df2T_f32(&DTMF_BIQUAD, inSignalF32 + samp, 
+																				outSignalF32 + samp, BLOCKSIZE);
+						}
+	 }
 }
