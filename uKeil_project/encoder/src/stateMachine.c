@@ -43,7 +43,7 @@ startMachine(void)
             
             UART_write((const char *)"\r\nSending...");
             i2s_start();
-            delay_ms(500u);
+            delay_ms(5000u);
             i2s_stop();
             UART_write("\r\n>");
             
