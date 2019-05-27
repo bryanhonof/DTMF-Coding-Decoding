@@ -13,8 +13,11 @@
 
   <project>
     <PathAndName>.\encoder\encoder.uvprojx</PathAndName>
+<<<<<<< HEAD
     <NodeIsActive>1</NodeIsActive>
     <NodeIsExpanded>1</NodeIsExpanded>
+=======
+>>>>>>> a808e014d012e8d7a8af646ccfd2d32ded57cdf5
   </project>
 
 </ProjectWorkspace>
