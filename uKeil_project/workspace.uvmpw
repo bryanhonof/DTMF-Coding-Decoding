@@ -15,7 +15,6 @@
 
   <project>
     <PathAndName>.\encoder\encoder.uvprojx</PathAndName>
-    <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
 </ProjectWorkspace>
