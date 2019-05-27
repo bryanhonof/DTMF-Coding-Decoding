@@ -1,6 +1,7 @@
 --cpu=Cortex-M4.fp
 ".\objects\main.o"
 ".\objects\uart.o"
+".\objects\statemachine.o"
 ".\objects\audio.o"
 ".\objects\delay.o"
 ".\objects\dstc.o"

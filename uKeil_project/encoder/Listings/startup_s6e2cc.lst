@@ -856,12 +856,12 @@ ARM Macro Assembler    Page 14
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=.\objects\startup_s6e2cc.d -o.\objects\startup_s6e2cc.o -I.\RTE
-\Device\S6E2CCAJ0A -I.\RTE\_S6ECC -IC:\Users\user\AppData\Local\Arm\Packs\ARM\C
-MSIS\5.5.1\CMSIS\Core\Include -IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS
-\5.5.1\CMSIS\DSP\Include -IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1
-.5.1\Device\S6E2CC\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_V
-ERSION SETA 527" --predefine="_RTE_ SETA 1" --predefine="S6E2CCAJ0A SETA 1" --l
-ist=.\listings\startup_s6e2cc.lst RTE\Device\S6E2CCAJ0A\startup_s6e2cc.s
+\Device\S6E2CCAJ0A -I.\RTE\_release -IC:\Users\user\AppData\Local\Arm\Packs\ARM
+\CMSIS\5.5.1\CMSIS\Core\Include -IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMS
+IS\5.5.1\CMSIS\DSP\Include -IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP
+\1.5.1\Device\S6E2CC\Include --predefine="__EVAL SETA 1" --predefine="__UVISION
+_VERSION SETA 527" --predefine="_RTE_ SETA 1" --predefine="S6E2CCAJ0A SETA 1" -
+-list=.\listings\startup_s6e2cc.lst RTE\Device\S6E2CCAJ0A\startup_s6e2cc.s
 
 
 

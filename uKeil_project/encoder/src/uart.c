@@ -56,7 +56,7 @@ UART_init(stc_mfs_hl_uart_config_t *cfgStruct)
 }
 
 void
-UART_write(char* message)
+UART_write(const char *message)
 {
 		Mfs_Hl_Write(&MFS0, (uint8_t*) message, strlen(message), FALSE, FALSE);
 	
