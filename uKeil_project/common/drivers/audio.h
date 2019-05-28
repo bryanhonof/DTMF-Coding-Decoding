@@ -24,13 +24,13 @@ static volatile int32_t audio_IN=0;     //audio data IN
 static volatile int32_t audio_OUT=0;    //audio data OUT
 
 //Using DMA
-static uint32_t dma_tx_buffer_pong[DMA_BUFFER_SIZE], 
+static float32_t dma_tx_buffer_pong[DMA_BUFFER_SIZE], 
 dma_tx_buffer_ping[DMA_BUFFER_SIZE], 
 dma_rx_buffer_ping[DMA_BUFFER_SIZE], 
 dma_rx_buffer_pong[DMA_BUFFER_SIZE];
 	
-static volatile uint32_t rx_proc_buffer = PING;
-static volatile uint32_t tx_proc_buffer = PING;
+static volatile float32_t rx_proc_buffer = PING;
+static volatile float32_t tx_proc_buffer = PING;
 static volatile int tx_buffer_empty = 0;
 static volatile int rx_buffer_full = 0;
 

@@ -1,89 +1,102 @@
-// fir_prbs_CMSIS_dma.c
-
 #include "audio.h"
+#include "window.h"
+#include "arm_math.h"
+#include "arm_const_structs.h"
 
-volatile int16_t audio_chR=0;    
-volatile int16_t audio_chL=0;    
+volatile int16_t audio_chR = 0u;
+volatile int16_t audio_chL = 0u;
 
-#include "bp1750.h"
+#define TEST_LENGTH_SAMPLES  512
 
-float32_t x[DMA_BUFFER_SIZE], y[DMA_BUFFER_SIZE], state[N+(DMA_BUFFER_SIZE)-1];
-
-arm_fir_instance_f32 S;
-
-
-void DMA_HANDLER (void)
+void
+DMA_HANDLER(void)
 {
-    if (dstc_state(0)){ //check interrupt status on channel 0
+    if(dstc_state(0u))
+    {
         if(tx_proc_buffer == (PONG))
         {
-            dstc_src_memory (0,(uint32_t)&(dma_tx_buffer_pong));    //Soucrce address
+            dstc_src_memory(0u, (uint32_t)(&dma_tx_buffer_pong));
             tx_proc_buffer = PING; 
         }
         else
         {
-            dstc_src_memory (0,(uint32_t)&(dma_tx_buffer_ping));    //Soucrce address
+            dstc_src_memory(0u, (uint32_t)(&dma_tx_buffer_ping));
             tx_proc_buffer = PONG; 
         }
-        tx_buffer_empty = 1;                                        //Signal to main() that tx buffer empty                    
-        
-        dstc_reset(0);                                                    //Clean the interrup flag
+        tx_buffer_empty = 1u;
+       
+        dstc_reset(0u);
     }
     
-    if (dstc_state(1)) { //check interrupt status on channel 1
+    if (dstc_state(1u))
+    {
         if(rx_proc_buffer == PONG)
         {
-            dstc_dest_memory (1,(uint32_t)&(dma_rx_buffer_pong));   //Destination address
+            dstc_dest_memory(1u, (uint32_t)(&dma_rx_buffer_pong));
             rx_proc_buffer = PING;
         }
         else
         {
-            dstc_dest_memory (1,(uint32_t)&(dma_rx_buffer_ping));   //Destination address
+            dstc_dest_memory(1u, (uint32_t)(&dma_rx_buffer_ping));
             rx_proc_buffer = PONG;
         }
-        rx_buffer_full = 1;   
-                        
-        dstc_reset(1);        
+        rx_buffer_full = 1u;
+        
+        dstc_reset(1u);
     }
     
     return;
 }
 
-void proces_buffer(void) 
+static float32_t testOutput[TEST_LENGTH_SAMPLES];
+
+void
+proces_buffer(void) 
 {
-    int ii;
-    uint32_t *txbuf, *rxbuf;
+    uint32_t  i                  = 0u;
+    float32_t *txbuf              = NULL;
+    float32_t *rxbuf              = NULL;
+    float32_t maxValue           = 0.00f;
+    uint32_t maxValueIndex       = 0u;
+    static uint32_t fftSize      = 512u;
+    static uint32_t ifftFlag     = 0u;
+    static uint32_t doBitReverse = 1u;
+    arm_status status            = ARM_MATH_SUCCESS;
     
-    if(tx_proc_buffer == PING) txbuf = dma_tx_buffer_ping; 
-    else txbuf = dma_tx_buffer_pong; 
-    if(rx_proc_buffer == PING) rxbuf = dma_rx_buffer_ping; 
-    else rxbuf = dma_rx_buffer_pong; 
-            
-    for (ii=0 ; ii<(DMA_BUFFER_SIZE) ; ii++){
-    x[ii] = (float32_t)(prbs());
-        }
-    arm_fir_f32(&S,x,y,DMA_BUFFER_SIZE);
+    txbuf = ((tx_proc_buffer == PING) ? (dma_tx_buffer_ping) : (dma_tx_buffer_pong));
+    rxbuf = ((rx_proc_buffer == PING) ? (dma_rx_buffer_ping) : (dma_rx_buffer_pong));
     
-    for (ii=0 ; ii<(DMA_BUFFER_SIZE) ; ii++) {
-        *txbuf++ = (((short)(y[ii])<<16 & 0xFFFF0000)) + ((short)(y[ii]) & 0x0000FFFF);    
-    } 
+    for(i = 0u; i < DMA_BUFFER_SIZE; i++)
+    {
+        rxbuf[i] *= window[i];
+    }
     
-    tx_buffer_empty = 0;
-    rx_buffer_full = 0;
+    arm_cfft_f32(&arm_cfft_sR_f32_len512, rxbuf, ifftFlag, doBitReverse);
+    arm_cmplx_mag_f32(rxbuf, testOutput, fftSize);
+    arm_max_f32(testOutput, fftSize, &maxValue, &maxValueIndex);
+    testOutput[maxValueIndex] = 0u;
+    
+    for(i = 0u; i < DMA_BUFFER_SIZE; i++)
+    {
+        *txbuf++ = (((uint16_t)(testOutput[i]) << 16u & 0xFFFF0000u)) + ((uint16_t)(testOutput[i]) & 0x0000FFFFu);
+    }
+    
+    tx_buffer_empty = 0u;
+    rx_buffer_full  = 0u;
     
     return;
 }
 
-int main (void) {                          //Main function
+int32_t
+main(void)
+{
+    audio_init(hz8000, line_in, dma, DMA_HANDLER);
 
-    gpio_set_mode(TEST_PIN,Output);
-    arm_fir_init_f32(&S,N,h,state,DMA_BUFFER_SIZE/2);
-    audio_init ( hz8000, line_in, dma, DMA_HANDLER);
-
-    while (1) {
+    while(1)
+    {
         while (!(rx_buffer_full && tx_buffer_empty)){};
-            gpio_set(TEST_PIN, HIGH);
-            proces_buffer();
-            gpio_set(TEST_PIN, LOW);
+        proces_buffer();
     }
+    
+    /* return 0u; */
 }

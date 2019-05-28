@@ -8,7 +8,6 @@
 #include <audio.h>
 #include <mfs_hl.h>
 #include <s6e2cc.h>
-#include <pdl_header.h>
 #include <uart.h>
 
 typedef struct freqPair_s {

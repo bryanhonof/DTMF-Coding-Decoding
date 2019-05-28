@@ -1,0 +1,8 @@
+--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\common\RTE\Device\S6E2CCAJ0A -I ..\common\PDL\2.1.0\drivers -I ..\common\PDL\2.1.0\utilities -I ..\common\drivers -I .\config -I .\inc
+-I.\RTE\Device\S6E2CCAJ0A
+-I.\RTE\_debug
+-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include
+-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include
+-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A
+-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d "src\uart.c"

@@ -205,7 +205,7 @@ __Vectors       DCD     __initial_sp              ; Top of Stack
                 DCD     MFS11_RX_IRQHandler
                 DCD     MFS11_TX_IRQHandler
                 DCD     ADC2_IRQHandler
-                DCD     Dummy
+                DCD     DSTC_COMP_IRQHandler
                 DCD     USB1_HDMICEC0_IRQHandler
                 DCD     USB1_HOST_HDMICEC1_IRQHandler
                 DCD     HSSPI_IRQHandler
@@ -405,6 +405,7 @@ Default_Handler PROC
                 EXPORT  MFS11_RX_IRQHandler       [WEAK]
                 EXPORT  MFS11_TX_IRQHandler       [WEAK]
                 EXPORT  ADC2_IRQHandler	          [WEAK]
+		        EXPORT  DSTC_COMP_IRQHandler      [WEAK]
                 EXPORT  USB1_HDMICEC0_IRQHandler  [WEAK]
                 EXPORT  USB1_HOST_HDMICEC1_IRQHandler [WEAK]
                 EXPORT  HSSPI_IRQHandler          [WEAK]
@@ -535,6 +536,7 @@ MFS10_TX_IRQHandler
 MFS11_RX_IRQHandler
 MFS11_TX_IRQHandler
 ADC2_IRQHandler
+DSTC_COMP_IRQHandler
 USB1_HDMICEC0_IRQHandler
 USB1_HOST_HDMICEC1_IRQHandler
 HSSPI_IRQHandler

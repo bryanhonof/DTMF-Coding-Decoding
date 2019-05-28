@@ -11,7 +11,7 @@ I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsi
 I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
 I (..\common\RTE\Device\S6E2CCAJ0A\system_s6e2cc.h)(0x5460783E)
 I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\interrupt_type.h)(0x570C9A4C)
-I (..\common\drivers\audio.h)(0x5CE53441)
+I (..\common\drivers\audio.h)(0x5CECFDF1)
 I (..\common\RTE\Device\S6E2CCAJ0A\s6e2cc.h)(0x55C9C8FA)
 I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FA234)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F218C)
@@ -21,7 +21,7 @@ I (..\common\drivers\gpio.h)(0x5CE53441)
 I (..\common\drivers\platform.h)(0x5CE53441)
 I (..\common\drivers\i2c.h)(0x5CE53441)
 I (..\common\drivers\i2s.h)(0x5CE53441)
-I (..\common\drivers\dstc.h)(0x5CE53441)
+I (..\common\drivers\dstc.h)(0x5CECFDFA)
 I (..\common\drivers\mfs_hl.h)(0x5CE53441)
 I (..\common\drivers\mfs.h)(0x5CE53441)
 I (..\common\drivers\pdl.h)(0x5CE53441)
@@ -33,7 +33,7 @@ I (..\common\drivers\pdl_device.h)(0x5CE53441)
 I (..\common\PDL\2.1.0\drivers\pdl_header.h)(0x5A3D3300)
 I (..\common\PDL\2.1.0\drivers\mfs/mfs.h)(0x5A3D32E6)
 I (.\inc\uart.h)(0x5CEBD8C8)
-I (src\stateMachine.h)(0x5CEBDFE6)
+I (src\stateMachine.h)(0x5CECDE79)
 F (.\src\uart.c)(0x5CEBD89D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\RTE\Device\S6E2CCAJ0A -I ..\common\PDL\2.1.0\drivers -I ..\common\PDL\2.1.0\utilities -I ..\common\drivers -I .\config -I .\inc-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_release-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
 I (.\inc\uart.h)(0x5CEBD8C8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
@@ -55,8 +55,8 @@ I (..\common\PDL\2.1.0\drivers\base_types.h)(0x5A3D3300)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599F218C)
 I (..\common\drivers\pdl_user.h)(0x5CE53441)
 I (..\common\drivers\pdl_device.h)(0x5CE53441)
-F (.\src\stateMachine.c)(0x5CEBE3EA)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\RTE\Device\S6E2CCAJ0A -I ..\common\PDL\2.1.0\drivers -I ..\common\PDL\2.1.0\utilities -I ..\common\drivers -I .\config -I .\inc-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_release-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\statemachine.o --omf_browse .\objects\statemachine.crf --depend .\objects\statemachine.d)
-I (src\stateMachine.h)(0x5CEBDFE6)
+F (.\src\stateMachine.c)(0x5CECDE7B)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\RTE\Device\S6E2CCAJ0A -I ..\common\PDL\2.1.0\drivers -I ..\common\PDL\2.1.0\utilities -I ..\common\drivers -I .\config -I .\inc-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_release-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\statemachine.o --omf_browse .\objects\statemachine.crf --depend .\objects\statemachine.d)
+I (src\stateMachine.h)(0x5CECDE79)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F218C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
 I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\mcu.h)(0x570C9A4C)
@@ -68,7 +68,7 @@ I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsi
 I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
 I (..\common\RTE\Device\S6E2CCAJ0A\system_s6e2cc.h)(0x5460783E)
 I (C:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include\interrupt_type.h)(0x570C9A4C)
-I (..\common\drivers\audio.h)(0x5CE53441)
+I (..\common\drivers\audio.h)(0x5CECFDF1)
 I (..\common\RTE\Device\S6E2CCAJ0A\s6e2cc.h)(0x55C9C8FA)
 I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FA234)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F218C)
@@ -78,7 +78,7 @@ I (..\common\drivers\gpio.h)(0x5CE53441)
 I (..\common\drivers\platform.h)(0x5CE53441)
 I (..\common\drivers\i2c.h)(0x5CE53441)
 I (..\common\drivers\i2s.h)(0x5CE53441)
-I (..\common\drivers\dstc.h)(0x5CE53441)
+I (..\common\drivers\dstc.h)(0x5CECFDFA)
 I (..\common\drivers\mfs_hl.h)(0x5CE53441)
 I (..\common\drivers\mfs.h)(0x5CE53441)
 I (..\common\drivers\pdl.h)(0x5CE53441)
@@ -87,10 +87,8 @@ I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599F218C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599F218C)
 I (..\common\drivers\pdl_user.h)(0x5CE53441)
 I (..\common\drivers\pdl_device.h)(0x5CE53441)
-I (..\common\PDL\2.1.0\drivers\pdl_header.h)(0x5A3D3300)
-I (..\common\PDL\2.1.0\drivers\mfs/mfs.h)(0x5A3D32E6)
 I (.\inc\uart.h)(0x5CEBD8C8)
-F (.\src\stateMachine.h)(0x5CEBDFE6)()
+F (.\src\stateMachine.h)(0x5CECDE79)()
 F (.\inc\uart.h)(0x5CEBD8C8)()
 F (..\common\drivers\audio.c)(0x5CE53441)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\RTE\Device\S6E2CCAJ0A -I ..\common\PDL\2.1.0\drivers -I ..\common\PDL\2.1.0\utilities -I ..\common\drivers -I .\config -I .\inc-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_release-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\audio.o --omf_browse .\objects\audio.crf --depend .\objects\audio.d)
 I (..\common\RTE\Device\S6E2CCAJ0A\s6e2cc.h)(0x55C9C8FA)
@@ -108,11 +106,11 @@ I (..\common\drivers\platform.h)(0x5CE53441)
 I (..\common\drivers\delay.h)(0x5CE53441)
 I (..\common\drivers\i2c.h)(0x5CE53441)
 I (..\common\drivers\i2s.h)(0x5CE53441)
-I (..\common\drivers\audio.h)(0x5CE53441)
+I (..\common\drivers\audio.h)(0x5CECFDF1)
 I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FA234)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F218C)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599F218E)
-I (..\common\drivers\dstc.h)(0x5CE53441)
+I (..\common\drivers\dstc.h)(0x5CECFDFA)
 F (..\common\drivers\delay.c)(0x5CE53441)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\RTE\Device\S6E2CCAJ0A -I ..\common\PDL\2.1.0\drivers -I ..\common\PDL\2.1.0\utilities -I ..\common\drivers -I .\config -I .\inc-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_release-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
 I (..\common\drivers\platform.h)(0x5CE53441)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
@@ -129,8 +127,8 @@ I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsi
 I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsis_armcc.h)(0x5C8FA234)
 I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
 I (..\common\drivers\platform.h)(0x5CE53441)
-I (..\common\drivers\dstc.h)(0x5CE53441)
-I (..\common\drivers\audio.h)(0x5CE53441)
+I (..\common\drivers\dstc.h)(0x5CECFDFA)
+I (..\common\drivers\audio.h)(0x5CECFDF1)
 I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FA234)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F218C)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599F218E)
@@ -178,14 +176,14 @@ I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\cmsi
 I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
 I (..\common\drivers\platform.h)(0x5CE53441)
 I (..\common\drivers\i2s.h)(0x5CE53441)
-I (..\common\drivers\audio.h)(0x5CE53441)
+I (..\common\drivers\audio.h)(0x5CECFDF1)
 I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include\arm_math.h)(0x5C8FA234)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599F218C)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599F218E)
 I (..\common\drivers\delay.h)(0x5CE53441)
 I (..\common\drivers\gpio.h)(0x5CE53441)
 I (..\common\drivers\i2c.h)(0x5CE53441)
-I (..\common\drivers\dstc.h)(0x5CE53441)
+I (..\common\drivers\dstc.h)(0x5CECFDFA)
 F (..\common\drivers\mfs.c)(0x5CE53441)(--c99 --gnu -c --cpu Cortex-M4.fp -D__EVAL -g -O3 --apcs=interwork -I ..\common\RTE\Device\S6E2CCAJ0A -I ..\common\PDL\2.1.0\drivers -I ..\common\PDL\2.1.0\utilities -I ..\common\drivers -I .\config -I .\inc-I.\RTE\Device\S6E2CCAJ0A-I.\RTE\_release-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\FM4_DFP\1.5.1\Device\S6E2CC\Include-D__UVISION_VERSION="527" -D_RTE_ -DS6E2CCAJ0A-o .\objects\mfs.o --omf_browse .\objects\mfs.crf --depend .\objects\mfs.d)
 I (..\common\drivers\pdl.h)(0x5CE53441)
 I (..\common\PDL\2.1.0\drivers\base_types.h)(0x5A3D3300)

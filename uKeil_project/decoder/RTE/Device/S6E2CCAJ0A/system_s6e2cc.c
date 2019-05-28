@@ -52,8 +52,10 @@
  ** 2014-03-11  0.4  EH   Added to set MCR_TTRM register
  ** 2014-05-30  0.5  EH   Added to set LCR_PRSLD register
  ******************************************************************************/
-
+ 
+#include "s6e2cc.h" //Customaised header file stored in RTE>Device>S6E2CCAJ0A 
 #include "mcu.h"
+
 
 /**
  ******************************************************************************
@@ -224,7 +226,7 @@ void SystemInit (void) {
     FM4_LCR->LCR_PRSLD = (uint8_t)LCR_PRSLD_Val;             /* set the division ratio of low-speed CR */
   }
 
-  FM4_CRG->SCM_CTL  |=  (uint8_t)(SCM_CTL_Val & 0xE0u);       /* Set Master Clock switch */ 
+  FM4_CRG->SCM_CTL  |=  (uint8_t)(SCM_CTL_Val & 0xE0u);      /* Set Master Clock switch */ 
   
   // Workaround for preventing MISRA C:1998 Rule 46 (MISRA C:2004 Rule 12.2)
   // violations:

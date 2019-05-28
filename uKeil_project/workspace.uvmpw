@@ -8,13 +8,13 @@
   <WorkspaceName>WorkSpace</WorkspaceName>
 
   <project>
-    <PathAndName>.\decoder\decoder.uvprojx</PathAndName>
-    <NodeIsActive>1</NodeIsActive>
-    <NodeIsExpanded>1</NodeIsExpanded>
+    <PathAndName>.\encoder\encoder.uvprojx</PathAndName>
   </project>
 
   <project>
-    <PathAndName>.\encoder\encoder.uvprojx</PathAndName>
+    <PathAndName>.\decoder\decoder.uvprojx</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
+    <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
 </ProjectWorkspace>

@@ -1,4 +1,5 @@
 --cpu=Cortex-M4.fp
+".\objects\uart.o"
 ".\objects\main.o"
 ".\objects\audio.o"
 ".\objects\delay.o"

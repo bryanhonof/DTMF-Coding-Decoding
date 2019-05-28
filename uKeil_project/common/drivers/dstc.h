@@ -9,7 +9,7 @@
 
 #define PING 0x00
 #define PONG 0x01
-#define DMA_BUFFER_SIZE 128 //Max 256
+#define DMA_BUFFER_SIZE 512 //Max 256
 
 /******************************************************************************
  * Global type definitions
