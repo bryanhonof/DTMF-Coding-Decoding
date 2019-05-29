@@ -13,7 +13,7 @@
 #define N_THETA_ARRAY  (2u)
 
 float32_t frequency_table[2] = { 697.0f, 1209.0f };
-float32_t amplitude          = 5000.00f;
+float32_t amplitude          = 1000.00f;
 freqPair_t *currentPair = &pairTable[NUL];
 
 /****** I2S Interruption Handler *****/
@@ -41,7 +41,7 @@ I2S_HANDLER(void)
     audio_chL = (int16_t)(amplitude * (arm_sin_f32(theta[0]) + arm_sin_f32(theta[1])));
     audio_chR = audio_chL;
         
-    audio_OUT = ((audio_chR<<16 & 0xFFFF0000)) + (audio_chL & 0x0000FFFF);    
+    audio_OUT = ((audio_chR << 16u & 0xFFFF0000u)) + (audio_chL & 0x0000FFFFu);    
     
     i2s_tx(audio_OUT);
     
